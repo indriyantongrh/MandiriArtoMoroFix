@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:background = "#00ffffff">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="290dp"
+                android:background="@drawable/profile_backgroud">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/image"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:clickable="true"
+                    android:elevation="5dp"
+                    android:focusable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/avatar_men"
+                    app:civ_border_color="#FFFFFFFF"
+                    app:civ_border_width="3dp"
+                    app:civ_fill_color="#efeeee" />
+                <Button
+                    android:id="@+id/btn_simpan_gambar"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:backgroundTint="#efc770"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:text="SIMPAN"
+                    android:visibility="gone"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignEnd="@+id/image"
+                    android:layout_centerVertical="true"
+                    android:elevation="6dp"
+                    android:visibility="invisible"
+                    android:layout_alignRight="@+id/image" />
+                <Button
+                    android:id="@+id/btnlogin"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_simpan_gambar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/gradienorange"
+                    android:elevation="10dp"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text="Nur Arifin"
+                    android:textColor="#fff"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnrequestmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:paddingTop="20dp"
+            android:background = "#00ffffff"
+            android:layout_below="@+id/card1">
+            <RelativeLayout
+                android:id="@+id/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnrequestmoney1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/request_money" />
+
+                        <TextView
+                            android:id="@+id/text24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="121dp"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="Request Money"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="21sp" />
+
+                        ------------------------------------------------------------
+                        <!--<View
+                            android:id="@+id/View1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text1"
+                android:background="@color/colorTab2" />-->
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnhistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:background = "#00ffffff"
+            android:layout_below="@+id/btnrequestmoney">
+            <RelativeLayout
+                android:id="@+id/btn2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnhistory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/history" />
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="199dp"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="History"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="21sp" />
+
+                        ------------------------------------------------------------
+                        <!--<View
+                            android:id="@+id/View1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text1"
+                android:background="@color/colorTab2" />-->
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btneditprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:background = "#00ffffff"
+            android:layout_below="@+id/btnhistory">
+            <RelativeLayout
+                android:id="@+id/btn3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btneditprofile2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/editprofile" />
+
+                        <TextView
+                            android:id="@+id/text22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="162dp"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="Edit Profile"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="21sp" />
+
+                        ------------------------------------------------------------
+                        <!--<View
+                            android:id="@+id/View1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text1"
+                android:background="@color/colorTab2" />-->
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/btnnotfikasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="7dp"
+            android:layout_margin="5dp"
+            android:background = "#00ffffff"
+            android:layout_below="@+id/btneditprofile">
+
+            <RelativeLayout
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/card5">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnnotfikasi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView222"
+                            android:layout_width="70sp"
+                            android:layout_height="70sp"
+                            android:layout_margin="5dp"
+                            android:src="@drawable/notifications" />
+
+                        <TextView
+                            android:id="@+id/text222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="153dp"
+                            android:gravity="center"
+                            android:paddingTop="10dp"
+                            android:text="Notification"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="21sp" />
+
+                        ------------------------------------------------------------
+                        <!--<View
+                            android:id="@+id/View1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_above="@+id/text1"
+                android:background="@color/colorTab2" />-->
+                    </RelativeLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

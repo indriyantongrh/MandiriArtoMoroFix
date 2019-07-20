@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mandiriartomoro_fix">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RequestMoney.RecivedMoney"></activity>
+        <activity android:name=".RegisterUser" />
+        <activity
+            android:name=".RequestMoney.RequestMoney"
+            android:theme="@style/Tanpajudul" />
+        <activity
+            android:name=".RequestMoney.FindMyLocation"
+            android:theme="@style/Tanpajudul" />
+        <activity
+            android:name=".SplasScreen2"
+            android:theme="@style/Tanpajudul" />
+        <activity
+            android:name=".SuksesRecivedMoney"
+            android:theme="@style/Tanpajudul" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Tanpajudul" />
+        <activity
+            android:name=".LoginUser"
+            android:theme="@style/Tanpajudul" />
+        <activity
+            android:name=".SplasScreen1"
+            android:theme="@style/Tanpajudul">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

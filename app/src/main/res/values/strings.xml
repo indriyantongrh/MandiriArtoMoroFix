@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MandiriArtoMoro-Fix</string>
+
+
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_accountnumber">Account Number</string>
+    <string name="hint_ammount">Amount</string>
+
+    <string-array name="pilihbahasa">
+        <item>Bahasa Indonesia</item>
+        <item>Bahasa Inggris</item>
+    </string-array>
+
+</resources>
